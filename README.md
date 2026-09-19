@@ -18,7 +18,6 @@ Secondary: OpenSSH backdoor `sshd.exe 0.0.0.0:22` LISTENING PID 2016 with AUTO_S
 
 ## Repository Structure
 
-/
 ├── memdumpWin7.mem (not included - evidence)
 ├── README.md
 ├── Report/
@@ -247,9 +246,3 @@ Simon Friday Adeka - CIP-B105 - 2026
 ## License
 
 Academic use only - Evidence not included.
-
----
-
-**Paste this as README.md** - It links all your 35 PNGs + 8 REC videos.
-
-Want me to also generate the **GitHub Pages HTML version** with embedded screenshots?
