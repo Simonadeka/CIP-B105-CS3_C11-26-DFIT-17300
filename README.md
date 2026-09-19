@@ -1,12 +1,20 @@
-# CIP-B105-CS3_C11-26-DFIT-17300 - Windows 7 Memory Forensics
+# CIP-B105-CS3_C11-26-DFIT-17300 - Windows 7 Memory Forensics - Illegal File Transfer
 
-**Examiner:** Simon Friday Adeka | **Profile:** Win7SP1x86_23418 | **Result:** PROVEN 95%
+**Examiner:** Simon Friday Adeka  
+**Evidence:** memdumpWin7.mem - Windows 7 Professional SP1 x86  
+**Case:** CIP-B105-CS3_C11-26-DFIT-17300  
+**Profile:** Win7SP1x86_23418  
+**Result:** Illegal transfer PROVEN - 95% Very High Confidence  
 
-### Executive Summary - GitHub Version
-Host **JEWIN7 / IE8WIN7** used by **IEUser SID 1000** to download `secret_file.docx` via Chrome and copy to removable **F:**.
+![Forensics](https://img.shields.io/badge/Volatility-2.6.1-blue) ![Platform](https://img.shields.io/badge/Windows-7_Pro_SP1_7601-lightgrey) ![Status](https://img.shields.io/badge/Result-PROVEN-green)
 
-**Chain:** Chrome EntryDB -> `\Users\IEUser\Downloads` -> `cd Downloads` -> `copy secret_file.docx F:` -> MountPoints2 `F:` + 5 GUIDs `2019-01-06 15:03:07 UTC`.
+## Executive Summary
 
+Host **JEWIN7 / IE8WIN7** used by **IEUser [SID 1000]** to download `secret_file.docx` via Chrome and copy to removable **F:**.
+
+**Chain:** Chrome Download Service EntryDB -> `\Users\IEUser\Downloads` -> `cd Downloads` -> `copy secret_file.docx F:` -> MountPoints2 `(S) F` + 5 GUIDs `2019-01-06 15:03:07 UTC`.
+
+Secondary: OpenSSH backdoor `sshd.exe 0.0.0.0:22` LISTENING PID 2016 with AUTO_START persistence + explorer injection VAD 0x3250000 RWX.
 ### Full Report
 📄 `Report/CIP-B105-CS3_C11-26-DFIT-17300_Simon_Friday_Adeka.pdf`
 
