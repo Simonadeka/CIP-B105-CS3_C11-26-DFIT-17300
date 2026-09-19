@@ -25,7 +25,7 @@ All evidence in `docs/04_Screenshots/`:
 - Fig05 Hivelist, Fig08-10 ComputerName JEWIN7/IE8WIN7, Fig09 ProductName Win7Pro
 - Fig12 TimeZone PST, Fig14 hashdump, Fig15 Run Keys, Fig16 pstree
 - Fig18 netscan sshd 0.0.0.0:22 LISTENING, Fig19 malfind explorer injection
-- Fig20 consoles `copy secret_file.docx F:` - SMOKING GUN
+- Fig20 consoles `copy secret_file.docx F:` - 
 - Fig22 filescan Chrome EntryDB, Fig23 MountPoints2 F: + GUIDs, Fig24 MountedDevices D: F:
 
 ### Verdict
